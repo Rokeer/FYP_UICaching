@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/3/trunk/UICaching/src/entity
+END
+Digger.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4/trunk/UICaching/src/entity/Digger.java
+END
+LogPicture.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/5/trunk/UICaching/src/entity/LogPicture.hbm.xml
+END
+UiCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/6/trunk/UICaching/src/entity/UiCache.java
+END
+User.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/7/trunk/UICaching/src/entity/User.hbm.xml
+END
+Favorite.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/5/trunk/UICaching/src/entity/Favorite.hbm.xml
+END
+Log.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/7/trunk/UICaching/src/entity/Log.hbm.xml
+END
+User-registerContext-validation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4/trunk/UICaching/src/entity/User-registerContext-validation.xml
+END
+LogPicture.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/5/trunk/UICaching/src/entity/LogPicture.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/4/trunk/UICaching/src/entity/User.java
+END
+Favorite.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/UICaching/src/entity/Favorite.java
+END
+Log.java
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/5/trunk/UICaching/src/entity/Log.java
+END
+UiCachePicture.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/5/trunk/UICaching/src/entity/UiCachePicture.hbm.xml
+END
+Digger.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/5/trunk/UICaching/src/entity/Digger.hbm.xml
+END
+UiCache.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/7/trunk/UICaching/src/entity/UiCache.hbm.xml
+END
+UiCachePicture.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/5/trunk/UICaching/src/entity/UiCachePicture.java
+END

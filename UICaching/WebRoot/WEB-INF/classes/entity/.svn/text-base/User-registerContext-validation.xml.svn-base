@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="firstName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="gmvfirstNameString"></message>
+		</field-validator>
+	
+		<field-validator type="stringlength">
+			<param name="trim">true</param>
+			<param name="maxLength">50</param>
+			<message key="gmvfirstNameLength"></message>
+		</field-validator>
+		
+		<field-validator type="regex">
+			<param name="trim">true</param>
+			<param name="expression">
+				<![CDATA[^(([(\u4e00-\u9fa5)]+)|([(a-zA-Z)]+))$]]>
+			</param>
+			<message key="gmvfirstNameRegex"></message>
+		</field-validator>
+	</field>
+	
+	<field name="secondName">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="gmvsecondNameString"></message>
+		</field-validator>
+	
+		<field-validator type="stringlength">
+			<param name="trim">true</param>
+			<param name="maxLength">50</param>
+			<message key="gmvsecondNameLength"></message>
+		</field-validator>
+		
+		<field-validator type="regex">
+			<param name="trim">true</param>
+			<param name="expression">
+				<![CDATA[^(([(\u4e00-\u9fa5)]+)|([(a-zA-Z)]+))$]]>
+			</param>
+			<message key="gmvsecondNameRegex"></message>
+		</field-validator>
+	</field>
+	
+	<field name="email">
+		<field-validator type="regex">
+			<param name="trim">true</param>
+			<param name="expression">
+				<![CDATA[\b(^[_A-Za-z0-9-]+(\.[_A-Za-z0-9-]+)*@((uic\.edu\.hk)|(mail\.uic\.edu\.hk))$)\b]]>
+			</param>
+			<message key="gmvemailRegex"></message>
+		</field-validator>
+	</field>
+
+	<field name="password">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="gmvpasswordString"></message>
+		</field-validator>
+		
+		<field-validator type="stringlength">
+			<param name="trim">true</param>
+			<param name="minLength">6</param>
+			<param name="maxLength">50</param>
+			<message key="gmvpasswordLength"></message>
+		</field-validator>
+		
+		<field-validator type="regex">
+			<param name="trim">true</param>
+			<param name="expression">
+				<![CDATA[^(([\w\-\~\!\@\#\$\%\^\&\*\(\)])+)$]]>
+			</param>
+			<message key="gmvpasswordRegex"></message>
+		</field-validator>
+	</field>
+	
+	<field name="verpwd">
+		<field-validator type="fieldexpression">
+			<param name="expression"><![CDATA[(password==verpwd)]]></param>
+			<message key="gmvverpwdExpression"></message>
+		</field-validator>
+	</field>
+
+	<field name="nickname">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message key="gmvnicknameString"></message>
+		</field-validator>
+		
+		<field-validator type="stringlength">
+			<param name="trim">true</param>
+			<param name="minLength">2</param>
+			<param name="maxLength">10</param>
+			<message key="gmvnicknameLength"></message>
+		</field-validator>
+		
+		<field-validator type="regex">
+			<param name="trim">true</param>
+			<param name="expression">
+				<![CDATA[^([(\u4e00-\u9fa5)(a-zA-Z)(0-9)_]+)$]]>
+			</param>
+			<message key="gmvnicknameRegex"></message>
+		</field-validator>
+	</field>
+
+	<field name="biographical">
+		<field-validator type="stringlength">
+			<param name="trim">true</param>
+			<param name="maxLength">250</param>
+			<message key="gmvbiographical"></message>
+		</field-validator>
+	</field>
+	
+		
+	<field name="secondEmail">
+		<field-validator type="fieldexpression">
+			<param name="expression"><![CDATA[(email!=secondEmail)]]></param>
+			<message key="gmvsecondEmailExpression"></message>
+		</field-validator>
+		
+		<field-validator type="email">
+			<param name="trim">true</param>
+			<message key="gmvsecondEmailEmail"></message>
+		</field-validator>
+	</field>
+</validators>

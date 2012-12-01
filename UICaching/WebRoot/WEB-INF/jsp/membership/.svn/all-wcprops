@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3/trunk/UICaching/WebRoot/WEB-INF/jsp/membership
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/7/trunk/UICaching/WebRoot/WEB-INF/jsp/membership/login.jsp
+END
+reg.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/7/trunk/UICaching/WebRoot/WEB-INF/jsp/membership/reg.jsp
+END
+uploadAvatar.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/7/trunk/UICaching/WebRoot/WEB-INF/jsp/membership/uploadAvatar.jsp
+END

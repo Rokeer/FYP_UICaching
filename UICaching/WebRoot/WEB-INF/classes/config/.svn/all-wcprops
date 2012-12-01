@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/3/trunk/UICaching/src/config
+END
+MapMethods.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/7/trunk/UICaching/src/config/MapMethods.java
+END
+globalMethods.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/6/trunk/UICaching/src/config/globalMethods.java
+END
+ComparatorUICache.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/6/trunk/UICaching/src/config/ComparatorUICache.java
+END
+HibernateSessionFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/7/trunk/UICaching/src/config/HibernateSessionFactory.java
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/6/trunk/UICaching/src/config/hibernate.cfg.xml
+END

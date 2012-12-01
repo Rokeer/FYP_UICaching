@@ -1,0 +1,82 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<constant name="struts.custom.i18n.resources" value="globalMessages" />
+	<constant name="struts.multipart.saveDir" value="/tmp"/>
+
+	<package name="default" extends="struts-default">
+		<interceptors>
+			<interceptor name="userLogin" class="interceptor.LoginCheck"/>
+		</interceptors>
+		
+		<action name="index" class="action.IndexAction">
+			<result>/WEB-INF/jsp/index.jsp</result>
+		</action>
+		
+		<action name="userLogin" class="action.UserLoginAction">
+			<result type="redirect">/index.action</result>
+			<result name="login">/WEB-INF/jsp/membership/login.jsp</result>
+			<result name="ref" type="redirect" >${ref}</result>
+			<result name="showException">/WEB_INF/jsp/membership/login.jsp</result>
+			<exception-mapping result="showException"
+				exception="java.sql.SQLException" />
+		</action>
+		
+		<action name="logout" class="action.LogoutAction">
+			<result type="redirect">/index.action</result>
+		</action>
+		
+		<action name="register" class="action.RegisterAction">
+			<result>/WEB-INF/jsp/membership/uploadAvatar.jsp</result>
+			<result name="input">/WEB-INF/jsp/membership/reg.jsp</result>
+			<result name="showException">/WEB_INF/jsp/membership/reg.jsp</result>
+			<exception-mapping result="showException"
+				exception="java.sql.SQLException" />
+		</action>
+		
+		<action name="uploadAvatar" class="action.UploadAvatarAction">
+			<param name="path">/upload/avatar</param>
+			<result name="success">/WEB-INF/jsp/index.jsp</result>
+			<result name="input">/WEB-INF/jsp/uploadAvatar.jsp</result>
+		</action>
+		
+		<action name="reportNewUiCache" class="action.ReportNewUiCacheAction">
+			<interceptor-ref name="userLogin"/>
+			<interceptor-ref name="defaultStack"/>
+			<result>/WEB-INF/jsp/seek/upload.jsp</result>
+			<result name="input">/WEB-INF/jsp/hide/report.jsp</result>
+			<result name="login" type="redirect" >userLogin.action?ref=reportNewUiCache.action</result>
+		</action>
+		
+		<action name="uploadCachePictures" class="action.UploadCachePicturesAction">
+			<interceptor-ref name="userLogin"/>
+			<interceptor-ref name="defaultStack"/>
+			<param name="path">/upload/cache/picture</param>
+			<result name="success">/WEB-INF/jsp/notice/success.jsp</result>
+			<result name="input">/WEB-INF/jsp/seek/upload.jsp</result>
+			<result name="login" type="redirect" >userLogin.action?ref=index.action</result>
+		</action>
+		
+		<action name="search" class="action.SearchAction">
+			<result>/WEB-INF/jsp/seek/search.jsp</result>
+			<result name="input">/WEB-INF/jsp/seek/default.jsp</result>
+			<result name="uccode" type="redirect">viewCacheDetail.action?UCCode=${uiCache.ucId}</result>
+		</action>
+		
+		<action name="viewCacheDetail" class="action.ViewCacheDetailAction">
+			<result>/WEB-INF/jsp/seek/cache_details.jsp</result>
+			<result name="input" type="redirect" >search.action</result>
+		</action>
+		
+		<action name="test" class="action.TestAction">
+			<result>/WEB-INF/jsp/seek/cache_details.jsp</result>
+			<result name="input">/WEB-INF/jsp/seek/default.jsp</result>
+		</action>
+		
+		<action name="showOnMap" class="action.ShowOnMapAction">
+			<result>/WEB-INF/jsp/seek/showOnMap.jsp</result>
+		</action>
+	</package>
+</struts>

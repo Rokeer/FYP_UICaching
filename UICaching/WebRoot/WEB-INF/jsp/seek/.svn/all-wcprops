@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4/trunk/UICaching/WebRoot/WEB-INF/jsp/seek
+END
+upload.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/7/trunk/UICaching/WebRoot/WEB-INF/jsp/seek/upload.jsp
+END
+default.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/7/trunk/UICaching/WebRoot/WEB-INF/jsp/seek/default.jsp
+END
+search.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/7/trunk/UICaching/WebRoot/WEB-INF/jsp/seek/search.jsp
+END
+cache_details.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/7/trunk/UICaching/WebRoot/WEB-INF/jsp/seek/cache_details.jsp
+END
+showOnMap.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/7/trunk/UICaching/WebRoot/WEB-INF/jsp/seek/showOnMap.jsp
+END

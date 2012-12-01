@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/3/trunk/UICaching/src
+END
+struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/7/trunk/UICaching/src/struts.xml
+END
+globalMessages_zh_CN.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/7/trunk/UICaching/src/globalMessages_zh_CN.properties
+END
+globalMessages_en_US.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/7/trunk/UICaching/src/globalMessages_en_US.properties
+END
